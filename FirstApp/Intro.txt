@@ -1,0 +1,19 @@
+web.xml -> Deployment Descriptor file
+
+Web Terminology:
+
+Static Website : server(set of pages (preloaded)) -> client
+
+Dynamic Website : server -> database(s) -> client
+
+Servlet API : package -> javax.servlet
+Interfaces: Servlet, ServletRequest, ServletResponse, etc.
+
+
+Methods of Servlet Interface: 
+
+> init				-> Initialize the servlet.
+> service				-> provides reponse for the incoming request.
+> destroy				-> invoked only once and to indicate that the servlet is being destroyed.
+> getservletconfig	-> returns the object of servletconfig.
+> getservletinfo	-> returns information about servlet such as writer, copywrite, version, etc.
