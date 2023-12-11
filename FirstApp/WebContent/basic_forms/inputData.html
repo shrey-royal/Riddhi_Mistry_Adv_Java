@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Basic Form Inputs</title>
+<style type="text/css">
+	* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+	}
+	
+	body {
+		height: 100vh;
+		width: 100vw;
+	}
+	
+	.container {
+		width: fit-content;
+		margin: 10px auto;
+	} 
+	
+	.container > h1 {
+		text-decoration: underline;
+	}
+	
+	form {
+		border: 1px solid orangered;
+		font-size: 18px;
+	}
+	
+</style>
+</head>
+<body>
+	<div class="container">
+		<h1>Registration Form</h1>
+		<form action="/FirstApp/ServReq_1" method="post">
+			<label for="name">Name: </label>
+			<input id="name" name="name" type="text" placeholder="Enter your name" size=20>
+			<br>
+			<label for="mail">Email: </label>
+			<input id="mail" name="mail" type="email" placeholder="Enter your email" size=25>
+			<br>
+			<label for="contact">Name: </label>
+			<input id="contact" name="contact" type="number" placeholder="Enter your contact" size=10>
+			<br>
+			<button type="submit">Register</button> | <button type="reset">Clear Form</button>
+			<br>
+		</form>
+	</div>
+</body>
+</html>

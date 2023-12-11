@@ -13,7 +13,16 @@ Interfaces: Servlet, ServletRequest, ServletResponse, etc.
 Methods of Servlet Interface: 
 
 > init				-> Initialize the servlet.
-> service				-> provides reponse for the incoming request.
-> destroy				-> invoked only once and to indicate that the servlet is being destroyed.
+> service			-> provides reponse for the incoming request.
+> destroy			-> invoked only once and to indicate that the servlet is being destroyed.
 > getservletconfig	-> returns the object of servletconfig.
 > getservletinfo	-> returns information about servlet such as writer, copywrite, version, etc.
+
+
+Servlet Life Cycle: 
+
+1. Servlet class is loaded.
+2. Servlet instance is created.
+3. Init method invoked. (servlet initialize)
+4. Service method invoked. (servlet run)
+5. Destroy method invoked. (servlet objects will be destroyed)
