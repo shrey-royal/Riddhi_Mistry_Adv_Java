@@ -26,3 +26,8 @@ Servlet Life Cycle:
 3. Init method invoked. (servlet initialize)
 4. Service method invoked. (servlet run)
 5. Destroy method invoked. (servlet objects will be destroyed)
+
+Request Dispatcher: (interface)
+> It provides the facility of dispatching the request to another resource it may be html, servlet or jsp.
+
+There are 2 methods to dispatch the servlet: 1. forward()	2. include()
