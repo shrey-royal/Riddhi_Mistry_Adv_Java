@@ -15,7 +15,7 @@ public class RD2 extends HttpServlet {
 		res.setContentType("text/html");
 		PrintWriter out = res.getWriter();
 		
-		out.print("RD2");
+		out.print("<h1>RD2<h1>");
 	}
 
 
