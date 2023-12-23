@@ -31,3 +31,41 @@ Request Dispatcher: (interface)
 > It provides the facility of dispatching the request to another resource it may be html, servlet or jsp.
 
 There are 2 methods to dispatch the servlet: 1. forward()	2. include()
+
+Servlet Topics:
+
+0. Servlet Life Cycle
+1. Generic, HTTP Servlet
+2. ServletRequest
+3. Servlet Collaboration:
+	> RequestDispatcher: forward() / include()
+	> sendRedirect()
+4. ServletConfig(interface): An object made by the web container for each servlet.
+> it contains config files that relates to the web.xml.
+> if we change some configurations in web.xml then the changes will be done automatically in the servlet using servletconfig object.
+
+5. ServletContext
+6. Attribute in Servlet
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
