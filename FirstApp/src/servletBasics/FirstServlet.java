@@ -12,6 +12,7 @@ public class FirstServlet extends GenericServlet {
 		out.print("<html><head><title>Generic Servlet</title></head><body>");
 		out.print("<h1>First Servlet</h1>");
 		out.print("Welcome, " + req.getParameter("username"));
+		out.print("<br>version: " + getServletContext().getInitParameter("version"));
 		out.print("</body></html>");
 	}
 }
