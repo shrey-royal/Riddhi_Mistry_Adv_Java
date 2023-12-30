@@ -45,7 +45,57 @@ Servlet Topics:
 > if we change some configurations in web.xml then the changes will be done automatically in the servlet using servletconfig object.
 
 5. ServletContext
-6. Attribute in Servlet
+
+6. Attribute in Servlet: they are objects that can be set, get and removed from one fo the following scopes:
+	1. request Scope
+	2. session Scope
+	3. application Scope
+	
+Methods of ServletRequest, HttpSession and ServletContext interface.
+
+1. public void setAttribute(String name, Object object): sets the given object in the application scope.
+2. public Object getAttributes(String name): Returns the attribute for the specified name.
+3. public Enumeration getInitParameterNames(): returns the names of all context initialized parameters.
+4. public void removeAttribute(String name): Removes the attribute with the given name from context.
+--------------------------------------------------------------------------------------------------------
+
+Session Tracking in Servlets:
+
+Session means specific interval of time
+
+Session Tracking is a way to maintain state(data) of an user. also known as Session Management.
+
+used to recognize the users
+
+4 types of session tracking techniques:
+
+1. Cookies: small piece of information that is persisted between the multiple client request
+> a cookie has a name, a value, optional attrs like max age, path, version, etc.
+
+
+2. Hidden Form Fields
+3. URL rewriting
+4. HttpSession
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
