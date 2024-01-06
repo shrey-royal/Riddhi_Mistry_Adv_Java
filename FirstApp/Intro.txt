@@ -72,11 +72,14 @@ used to recognize the users
 1. Cookies: small piece of information that is persisted between the multiple client request
 > a cookie has a name, a value, optional attrs like max age, path, version, etc.
 
-
 2. Hidden Form Fields
-3. URL rewriting
-4. HttpSession
+> here, we will add a hidden textfield to maintain the state of the user
 
+3. URL rewriting: we append a token or identifier to the url of the next servlet or the next resource.
+format:
+	url?name1=value1&name2=value2&??
+
+4. HttpSession (interface)
 
 
 
