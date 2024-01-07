@@ -82,8 +82,7 @@ format:
 4. HttpSession (interface)
 
 
-
-
+Events and Listener: ex: HTTPSESSION
 
 
 
