@@ -86,11 +86,25 @@ Events and Listener: ex: HTTPSESSION
 
 
 
+JSP: Java Server Pages / Jakarta Server Pages
 
+In JSP we can code in HTML and add java parts into it.
 
+Advantages of Servlet: 
+1. Extension to Servlet
+2. Easy to maintain
+3. Fast Development: No need to recompile and redeploy
+4. Less code than servlet
 
+Life Cycle of JSP: 
 
-
+1. Translation of JSP Page
+2. Compilation of JSP Page
+3. Classloading (class will be loaded)
+4. Instantiation (Object of the GenericServlet is created)
+5. Initialization (the container invokes jspInit() method)
+6. Request Processing (the container invokes _jspService() method)
+7. Destroy (the container invokes jspDestroy() method)
 
 
 
