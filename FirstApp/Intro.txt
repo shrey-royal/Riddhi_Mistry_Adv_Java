@@ -106,8 +106,25 @@ Life Cycle of JSP:
 6. Request Processing (the container invokes _jspService() method)
 7. Destroy (the container invokes jspDestroy() method)
 
+JSP Scripting Elements: they can be used to write java code inside the jsp page
 
+1. scriptlet tag ( <% java source code %> )
+2. expression tag ( <%= statement %> )
+3. declaration tag
 
+JSP Implicit Objects: 9 objs : These objs are created by the web container that are available to all the jsp pages.
+
+Object		Type
+
+out			JspWriter
+request		HttpServletRequest
+response	HttpServletResponse
+config		ServletConfig
+application	ServletContext
+session		HttpSession
+pageContext	PageContext
+page		Object
+exception	Throwable
 
 
 
