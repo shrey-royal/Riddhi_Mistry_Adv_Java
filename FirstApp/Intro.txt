@@ -126,7 +126,36 @@ pageContext	PageContext
 page		Object
 exception	Throwable
 
+JSP Directive Elements
 
+jsp directives are messages that tells the web container how to translate a jsp page into a corresponding servlet
+
+3 types: 
+	1) page directive
+	2) include directive
+	3) taglib directive
+	
+syntax:
+	<%@ directive attribute="value" %>
+	
+	
+1) page directive (<%@ page attribute="value" %>)
+
+attributes:
+
+1) import
+2) contentType
+3) extends
+4) info
+5) buffer
+6) language
+7) isELIgnored
+8) isThreadSafe
+9) autoFlush
+10) session
+11) pageEncoding
+12) errorPage
+13) isErrorPage
 
 
 

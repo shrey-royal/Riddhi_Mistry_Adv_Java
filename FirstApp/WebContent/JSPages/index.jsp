@@ -21,7 +21,7 @@
 	<br><br><br>
 	<ol type="i">
 		<li><a href="/FirstApp/basic_forms/inputData.html">scripting_elements</a></li>
-		<li><a href="/FirstApp/basic_forms/implicit_OBJs">implicit_OBJs</a></li>
+		<li><a href="/FirstApp/JSPages/page_directive.jsp">JSP Page Directive</a></li>
 		
 		
 	</ol>
