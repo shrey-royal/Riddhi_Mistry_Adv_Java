@@ -22,6 +22,10 @@
 	<ol type="i">
 		<li><a href="/FirstApp/basic_forms/inputData.html">scripting_elements</a></li>
 		<li><a href="/FirstApp/JSPages/page_directive.jsp">JSP Page Directive</a></li>
+		<li><a href="/FirstApp/JSPages/include_directive.jsp">JSP Include Directive</a></li>
+		<li><a href="/FirstApp/JSPages/ActionTag1.jsp">ActionTag1</a></li>
+		<li><a href="/FirstApp/JSPages/ActionTag2.jsp">ActionTag2</a></li>
+		<li><a href="/FirstApp/JSPages/JSTLTAGS.jsp">JSTL Tags</a></li>
 		
 		
 	</ol>

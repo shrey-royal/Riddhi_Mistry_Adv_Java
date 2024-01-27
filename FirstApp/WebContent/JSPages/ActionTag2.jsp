@@ -1,14 +1,14 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1" import="java.util.Date" %>
+    pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>page_directive</title>
+<title>ActionTag2</title>
 </head>
 <body>
-	<!-- import -->
-	Today is <%= new Date() %>
-	
+	<%
+		out.print("ActionTag2");
+	%>
 </body>
 </html>

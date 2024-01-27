@@ -158,10 +158,27 @@ attributes:
 13) isErrorPage
 
 
+Action Tags: They are used to control the flow between pages and to use java Bean.
+
+JSP Action Tags		Description
+jsp:forward			forwards the request and response to another resource.
+jsp:include			includes another resource.
+jsp:useBean			creates or locates bean object.
+jsp:setProperty		sets the value of property in bean object.
+jsp:getProperty		prints the value of property of the bean.
+jsp:plugin			embeds another components such as applet.
+jsp:param			sets the parameter value. It is used in forward and include mostly.
+jsp:fallback		can be used to print the message if plugin is working. It is used in jsp:plugin.
 
 
+JSTL : The JSP Standard Tag Library (JSTL) represents a set of tags to simplify the JSP development.
 
 
+Advantages: Fast Development, Code Reusability, No need to use scriptlet tag
+
+4 types: Core, Function, Formatting, XML, SQL
+
+common uri: http://java.sun.com/jsp/jstl/
 
 
 
