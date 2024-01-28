@@ -26,6 +26,7 @@
 		<li><a href="/FirstApp/JSPages/ActionTag1.jsp">ActionTag1</a></li>
 		<li><a href="/FirstApp/JSPages/ActionTag2.jsp">ActionTag2</a></li>
 		<li><a href="/FirstApp/JSPages/JSTLTAGS.jsp">JSTL Tags</a></li>
+		<li><a href="/FirstApp/JSPages/CustomTag.jsp">Custom Tags</a></li>
 		
 		
 	</ol>

@@ -181,6 +181,13 @@ Advantages: Fast Development, Code Reusability, No need to use scriptlet tag
 common uri: http://java.sun.com/jsp/jstl/
 
 
+JSP Custom Tags
+
+Steps to create a custom tag
+
+1: create a tag handler class (actions: start/end of the tag) (handle the business logic)
+2: create the tag library descriptor (TLD) file (defining tag, name and tag handler class)
+3: use that tag (use custom tag)
 
 
 
