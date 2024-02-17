@@ -1,11 +1,14 @@
 package com.dao;
 
+import java.util.ArrayList;
+
 import org.bson.Document;
 
 import com.bean.CharacterBean;
 import com.mongodb.ErrorCategory;
 import com.mongodb.MongoWriteException;
 import com.mongodb.client.MongoCollection;
+import com.mongodb.client.MongoCursor;
 import com.util.DBConn;
 
 public class CharacterDao {
@@ -30,4 +33,23 @@ public class CharacterDao {
 		}
 		DBConn.closeConnection();
 	}
+	
+	public ArrayList<CharacterBean> getAllCharacters() {
+        ArrayList<CharacterBean> characters = new ArrayList<>();
+        collection = DBConn.getCollection();
+        MongoCursor<Document> cursor = collection.find().iterator();
+        try {
+            while (cursor.hasNext()) {
+                Document doc = cursor.next();
+                CharacterBean character = new CharacterBean();
+                character.setId(doc.getInteger("_id"));
+                character.setCharacterName(doc.getString("characterName"));
+                character.setCreator(doc.getString("creator"));
+                characters.add(character);
+            }
+        } finally {
+            cursor.close();
+        }
+        return characters;
+    }
 }
