@@ -2,15 +2,15 @@ package com.bean;
 
 //POJO class
 public class CharacterBean {
-	private int id;
+	private int characterId;
 	private String characterName;
 	private String creator;
 	
 	public int getId() {
-		return id;
+		return characterId;
 	}
-	public void setId(int id) {
-		this.id = id;
+	public void setId(int characterId) {
+		this.characterId = characterId;
 	}
 	public String getCharacterName() {
 		return characterName;

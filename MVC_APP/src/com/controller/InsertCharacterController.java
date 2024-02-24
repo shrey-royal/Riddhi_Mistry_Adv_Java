@@ -16,26 +16,26 @@ public class InsertCharacterController extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
 	protected void doGet(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
-//		int id = Integer.parseInt(req.getParameter("id"));
-//		String characterName = req.getParameter("characterName");
-//		String creator = req.getParameter("creator");
-//		
-//		System.out.println("id: " + id + "\nCharacter Name: " + characterName + "\nCreator: " + creator);
-//		
-//		CharacterBean characterBean = new CharacterBean();
-		CharacterDao characterDao = new CharacterDao();
-//		
-//		characterBean.setId(id);
-//		characterBean.setCharacterName(characterName);
-//		characterBean.setCreator(creator);
+		int characterId = Integer.parseInt(req.getParameter("characterId"));
+		String characterName = req.getParameter("characterName");
+		String creator = req.getParameter("creator");
 		
-//		characterDao.insertCharacter(characterBean);
+		System.out.println("characterId: " + characterId + "Character Name: " + characterName + "\nCreator: " + creator);
+		
+		CharacterBean characterBean = new CharacterBean();
+		CharacterDao characterDao = new CharacterDao();
+		
+		characterBean.setId(characterId);
+		characterBean.setCharacterName(characterName);
+		characterBean.setCreator(creator);
+		
+		characterDao.insertCharacter(characterBean);
 		
 		characterDao.getAllCharacters();
 		
 		//list all characters
-//		RequestDispatcher rd = req.getRequestDispatcher("/view/listAllCharacters.jsp");
-//		rd.forward(req, res);
+		RequestDispatcher rd = req.getRequestDispatcher("/view/listAllCharacters.jsp");
+		rd.forward(req, res);
 	}
 
 	protected void doPost(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {

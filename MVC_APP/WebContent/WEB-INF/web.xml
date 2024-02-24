@@ -14,4 +14,24 @@
     <servlet-name>InsertCharacterController</servlet-name>
     <url-pattern>/insert</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>EditCharacterServlet</display-name>
+    <servlet-name>EditCharacterServlet</servlet-name>
+    <servlet-class>com.controller.EditCharacterServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>EditCharacterServlet</servlet-name>
+    <url-pattern>/edit</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>UpdateCharacterServlet</display-name>
+    <servlet-name>UpdateCharacterServlet</servlet-name>
+    <servlet-class>com.controller.UpdateCharacterServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UpdateCharacterServlet</servlet-name>
+    <url-pattern>/updateCharacter</url-pattern>
+  </servlet-mapping>
 </web-app>
