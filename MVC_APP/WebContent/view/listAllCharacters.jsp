@@ -24,7 +24,7 @@
 		background-color: #f2f2f2;
 	}
 	
-	.edit-btn {
+	.btn {
 		background-color: #4CAF50;
 		border: none;
 		color: white;
@@ -61,7 +61,7 @@
 				<td><%= character.getId() %></td>
 				<td><%= character.getCharacterName() %></td>
 				<td><%= character.getCreator() %></td>
-				<td><a href="/MVC_APP/edit?id=<%= character.getId() %>" class="edit-btn">Edit</a></td>
+				<td><a href="/MVC_APP/edit?id=<%= character.getId() %>" class="btn">Edit</a> | <a href="/MVC_APP/delete?id=<%= character.getId() %>" class="btn">Delete</a></td>
 			</tr>
 			<% } %>
 		</tbody>

@@ -34,4 +34,14 @@
     <servlet-name>UpdateCharacterServlet</servlet-name>
     <url-pattern>/updateCharacter</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>DeleteCharacterController</display-name>
+    <servlet-name>DeleteCharacterController</servlet-name>
+    <servlet-class>com.controller.DeleteCharacterController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DeleteCharacterController</servlet-name>
+    <url-pattern>/delete</url-pattern>
+  </servlet-mapping>
 </web-app>

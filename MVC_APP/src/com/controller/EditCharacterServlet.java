@@ -6,8 +6,6 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import org.bson.types.ObjectId;
-
 import com.bean.CharacterBean;
 import com.dao.CharacterDao;
 
@@ -23,7 +21,7 @@ public class EditCharacterServlet extends HttpServlet {
 				int id = Integer.parseInt(characterId);
 				CharacterDao dao = new CharacterDao();
 				CharacterBean character = dao.getCharacterById(id);
-				System.out.println(character);
+//				System.out.println(character);
 				if(character != null) {
 					req.setAttribute("character", character);
 					req.getRequestDispatcher("/view/editCharacter.jsp").forward(req, res);

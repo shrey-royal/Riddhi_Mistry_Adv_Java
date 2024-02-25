@@ -10,6 +10,7 @@ import com.mongodb.MongoWriteException;
 import com.mongodb.client.MongoCollection;
 import com.mongodb.client.MongoCursor;
 import com.mongodb.client.model.Filters;
+import com.mongodb.client.result.DeleteResult;
 import com.util.DBConn;
 
 public class CharacterDao {
@@ -19,7 +20,7 @@ public class CharacterDao {
 	public void insertCharacter(CharacterBean character) {
 		doc = new Document();
 		
-		doc.append("characterId", character.getId()).append("characterName", character.getCharacterName())
+		doc.append("id", character.getId()).append("characterName", character.getCharacterName())
 			.append("creator", character.getCreator());
 		
 		try {
@@ -38,7 +39,7 @@ public class CharacterDao {
         try {
             while (cursor.hasNext()) {
                 Document doc = cursor.next();
-                System.out.println(doc.toJson());
+//                System.out.println(doc.toJson());
                 CharacterBean character = new CharacterBean();
                 character.setId(doc.getInteger("id"));
                 character.setCharacterName(doc.getString("characterName"));
@@ -79,5 +80,22 @@ public class CharacterDao {
 			e.printStackTrace();
 			return false;
 		}
+	}
+
+	public boolean deleteCharacterById(int id) {
+		try {			
+			Document filter = new Document("id", id);
+			DeleteResult res = collection.deleteOne(filter);
+			long deletedDoc = res.getDeletedCount();
+			if(deletedDoc == 1) {
+				System.out.println("Data Deleted Successfully!");
+				return true;
+			} else {
+				System.out.println("Failed to Delete Data!");
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return false;
 	}
 }
