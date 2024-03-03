@@ -1,0 +1,4 @@
+Products table
+	id, name, description, price
+	
+product form -> insert html form
