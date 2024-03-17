@@ -68,7 +68,7 @@
                 <td>${product.desc}</td>
                 <td>${product.price}</td>
                 <td>
-                	<a href="update?id=${product.id}" class="btn waves-effect waves-light">Update</a>
+                	<a href="edit?id=${product.id}" class="btn waves-effect waves-light">Edit</a>
                 	<a href="delete?id=${product.id}" class="btn waves-effect waves-light delete-btn">Delete</a>
                 </td>
             </tr>
